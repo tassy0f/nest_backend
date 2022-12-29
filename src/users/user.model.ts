@@ -29,7 +29,7 @@ export class User extends Model<User, UserCreationAtrrs> {
     @Column({type:DataType.BOOLEAN, defaultValue: false}) 
     banned: boolean;
 
-    @ApiProperty({example: 'Не политкорректно излагает свои мысли', description: 'Причина бана может быть не указана'})
+    @ApiProperty({example: 'Неполиткорректно излагает свои мысли', description: 'Причина бана может быть не указана'})
     @Column({type:DataType.STRING, allowNull: true})  
     banReason: string;
 
